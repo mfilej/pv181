@@ -1,0 +1,3 @@
+# 3
+
+**Send me a digitally signed email to zriha@fi.muni.cz. Any kind of digital signature format is accepted (PGP, X509 etc).**

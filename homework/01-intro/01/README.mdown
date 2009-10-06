@@ -1,0 +1,12 @@
+# 1
+
+**Compute the SHA-1 hash of the file /etc/passwd on the labak.fi.muni.cz computer**
+
+The command to calculate the sha1 of a file in bash using the openssl command would be:
+
+    $ openssl sha1 /etc/passwd
+
+To get the hash of the file on the labak server we would have to issue the ssh command beforehand, thus the final command being:
+
+    $ ssh labak.fi.muni.cz openssl sha1 /etc/passwd
+    SHA1(/etc/passwd)= d864058d91018d42f6d01e38011091d547b52b9f

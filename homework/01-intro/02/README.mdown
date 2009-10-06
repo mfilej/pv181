@@ -1,0 +1,12 @@
+# 2
+
+**Create a program (in any programming language including shell scripts) that
+will generate a random (no particular requirements on quality of the
+randomness) 64-bit symmetric encryption key and output it in hexadecimal
+format.**
+
+We can use openssl with the subcommand rand to generate pseudo-random bytes of data. We need to provide the -hex parameter for the output to be in hexadecimal format. There is also the -rand parameter to provide a seed for the random generator. /dev/rand can be provided as such, though I'm not sure which source is used when this option is omitted. The resulting command could be:
+
+    $ openssl rand -hex -rand /dev/rand -out keyfile 8
+
+It writes 16 hexadecimal characters to keyfile that represent our 64 bits of pseudo-random data.
