@@ -1,0 +1,4 @@
+# PV181 Laboratory of security and applied cryptography I
+
+Lecturer: [Ing. Mgr. Zdeněk Říha, Ph.D.](https://is.muni.cz/auth/lide/?lang=en;uco=2514)
+[Course website](https://is.muni.cz/auth/predmety/predmet.pl?lang=en;id=519278;zpet=..%2Fpredmety%2Fkatalog.pl%3Ffakulta%3D1433%3Blang%3Den%3Bhledret%3Dpv181%3Bhledv%3Dnaz%3Bhledv%3Dkod%3Bfak%3D1433%3Buhledat%3D1;zpet_text=Back%20to%20course%20search)
