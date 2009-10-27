@@ -1,0 +1,16 @@
+# 1
+
+How do you obtain the SHA-1 hash of a file by using the openssl program? Describe the command line parameters.
+
+The command to calculate the sha1 of a file is:
+
+    $ openssl sha1 <file>
+
+There are also parameters that allow us to specify other message digest algorithms, like md5 or sha512 (etc):
+
+    $ openssl sha1 -sha512 <file>
+
+
+If we want to output the sha in a binary file (preferably to a file) we can use:
+
+    $ openssl sha1 -binary -out <outfile> <file>
