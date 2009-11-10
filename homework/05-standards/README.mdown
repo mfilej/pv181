@@ -1,0 +1,15 @@
+# 1
+
+**Write a program (in any programming language) that will prepare a padded block for RSA signature with ANSI X9.31 and PKCS#1 v1.5 padding. Input is a file, output are 2 padded octet strings. Use sha-1 as the hash function.**
+
+See pad_ansi.rb and pad_pkcs.rb.
+
+
+#2
+
+**Extract RSA public exponents from sample certificates (use any tool, no need to create you own program). Just list the files and relevant public exponents.**
+
+    1_ef_sod.bin 65537
+    2_ef_sod.bin 47013
+    3_ef_sod.bin 52881
+    
