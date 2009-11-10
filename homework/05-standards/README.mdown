@@ -2,7 +2,7 @@
 
 **Write a program (in any programming language) that will prepare a padded block for RSA signature with ANSI X9.31 and PKCS#1 v1.5 padding. Input is a file, output are 2 padded octet strings. Use sha-1 as the hash function.**
 
-See pad_ansi.rb and pad_pkcs.rb.
+See pad.rb
 
 
 #2
