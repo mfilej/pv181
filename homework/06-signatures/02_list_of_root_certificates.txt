@@ -1,0 +1,73 @@
+Certificates on the below list have the same cryptographic parameters:
+  * SHA1 hash function
+  * RSA algorithm
+  * with 2048bit key length
+
+Subject name and validity from/to can be seen for each certificate serial
+number on the list below:
+
+
+Serial Number: 10106572 (0x9a36cc)
+Subject name:
+    O=První certifikaèní autorita, a.s.
+    OU=nCipher DSE200
+    C=CZ
+    CN=I.CA - Time Stamping Authority
+Valid from: Feb  1 00:00:00 2006 GMT
+Valid to:   Feb  1 00:00:00 2011 GMT
+
+
+Serial Number: 10300000 (0x9d2a60)
+Subject name:
+    CN=I.CA - Qualified root certificate, O=První certifikaèní autorita, a.s.
+    C=CZ
+Valid from: Apr  1 00:00:00 2008 GMT
+Valid to:   Apr  1 00:00:00 2018 GMT
+
+
+Serial Number: 10153426 (0x9aedd2)
+Subject name:
+    O=První certifikaèní autorita, a.s., 
+    OU=Time Stamp Server 2
+    C=CZ
+    CN=Time Stamping Authority
+Valid from: Nov 20 15:00:00 2007 GMT
+Valid to:   Nov 20 15:00:00 2012 GMT
+
+
+Serial Number: 10146890 (0x9ad44a)
+Subject name:
+    O=První certifikaèní autorita, a.s.
+    OU=Time Stamp Server 1
+    CN=Time Stamping Authority, 
+    C=CZ
+Valid from: Oct  4 12:00:00 2007 GMT
+Valid to:   Oct  4 12:00:00 2012 GMT
+
+
+Serial Number: 10100000 (0x9a1d20)
+Subject name:
+    O=První certifikaèní autorita, a.s.
+    CN=I.CA - Qualified root certificate
+    C=CZ
+Valid from: Jun  1 00:00:00 2005 GMT
+Valid to:   Jun  1 00:00:00 2011 GMT
+
+
+Serial Number: 3 (0x3)
+Subject name:
+    O=eIdentity a.s.
+    OU=Akreditovaný poskytovatel certifikačních služeb
+    CN=ACAeID - Qualified Root Certificate (kvalifikovaný systémový certifikát kořenové CA)
+    C=CZ
+Valid from: Nov 15 13:52:14 2005 GMT
+Valid to:   Nov 15 13:52:14 2017 GMT
+
+
+Serial Number: 1 (0x1)
+Subject:
+    O=Èeská pošta, s.p. [IÈ 47114983]
+    CN=PostSignum Root QCA
+    C=CZ
+Valid from: Apr  6 09:45:11 2005 GMT
+Valid to:   Apr  6 09:42:27 2030 GMT
