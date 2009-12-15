@@ -62,18 +62,3 @@ class Cryptogram
   end
   
 end
-
-
-# deriv = "a5a6a7a801020304a1a2a3a405060708"
-# deriv_bin = hex_to_bin(deriv)
-# 
-# key = "CA CA CA CA CA CA CA CA 2D 2D 2D 2D 2D 2D 2D 2D".gsub(' ', '').downcase
-# key_bin = hex_to_bin(key)
-# 
-# # File.open("../DERIV", "wb") { |f| f << deriv_bin }
-# # File.open("../KEY", "wb")   { |f| f << key_bin }
-# 
-# base = "A1A2A3A4A5A6A7A801020304050607088000000000000000"
-# base_bin = hex_to_bin(base)
-# File.open("../BASE", "wb")   { |f| f << base_bin }
-# 

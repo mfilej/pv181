@@ -1,3 +1,13 @@
+# The TrippleDES class is a wrapper around the OpenSSL library
+# that supports ecb and cbc 3DES encoding.
+#
+# Sample usage:
+#   TrippleDES.encrypt :ecb do |c|
+#     c.key = "KEY GOES HERE"
+#     c.data = "DATA TO ENCRYPT GOES HERE"
+#   end
+
+
 require 'openssl'
 require 'convert'
 
@@ -35,7 +45,7 @@ class TrippleDES
     cipher = OpenSSL::Cipher::Cipher.new(MODES[mode])
     cipher.encrypt
     cipher.key = key
-    cipher.iv = "\0" * key.length
+    cipher.iv = "\0\0\0\0\0\0\0\0" if mode = :cbc
     cipher.update(data)
     cipher.final
   end
