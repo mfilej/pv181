@@ -45,7 +45,7 @@ class TrippleDES
     cipher = OpenSSL::Cipher::Cipher.new(MODES[mode])
     cipher.encrypt
     cipher.key = key
-    cipher.iv = "\0\0\0\0\0\0\0\0" if mode = :cbc
+    cipher.iv = "\0\0\0\0\0\0\0\0" if mode == :cbc
     cipher.update(data)
     cipher.final
   end
