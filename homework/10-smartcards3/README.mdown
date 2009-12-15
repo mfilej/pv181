@@ -1,0 +1,29 @@
+# 10. Smartcards 3
+
+*Assignment: Write a program that calculates the authentication 
+cryptograpms for Javacard secure messaging (for GXP211 PK (IS)).
+Use any programming language, any crypto library, no user interface
+is required (just a source code with constants definition is ok).
+See annex D of the GP specifications and the worked example below.*
+
+## Solution
+
+**Points of interest**:
+
+  * lib/cryptogram.rb - main calculation of cryptograms
+  * lib/tripple_des.rb - an OpenSSL wrapper for 3DES encryption
+  * test/cryptogram_test.rb - unit tests for the Cryptogram class, see for usage examples
+
+**Running the unit tests**:
+
+    $ rake test
+    Started
+    ..........
+    Finished in 0.001144 seconds.
+
+    10 tests, 14 assertions, 0 failures, 0 errors
+    
+
+### Problems
+
+  * There is an issue with how ecb encryption is configured that yields a (wrong) session key of only half of the required length.
