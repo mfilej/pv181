@@ -33,7 +33,7 @@ class CryptogramsTest < Test::Unit::TestCase
   
   def test_should_calculate_mac_session_key
     actual = @cryptogram.session_mac_key
-    expected = "73644da1e5bcbf93fb792988cab34253"
+    expected = "7bd9b6311e3115692d94f3fb63cc81d6"
     assert_equal expected, actual
   end
   
@@ -50,13 +50,15 @@ class CryptogramsTest < Test::Unit::TestCase
   end
   
   def test_should_calculate_host_cryptogram
+    stub_session_enc_key
     actual   = @cryptogram.host_cryptogram
     expected = "c4d55a919e522ecb"
     assert_equal expected, actual
   end
   
   def test_should_calculate_card_cryptogram
-    actual = @cryptogram.card_cryptogram
+    stub_session_enc_key    
+    actual   = @cryptogram.card_cryptogram
     expected = "e6276af834a45b26"
     assert_equal expected, actual
   end
@@ -68,5 +70,13 @@ class CryptogramsTest < Test::Unit::TestCase
   def test_should_not_calculate_bases_without_challenges
     assert_nil Cryptogram.new.host_cryptogram_base
     assert_nil Cryptogram.new.card_cryptogram_base
+  end
+  
+  def stub_session_enc_key
+    @cryptogram.instance_eval do
+      def session_enc_key
+        "73644da1e5bcbf93fb792988cab34253"
+      end
+    end
   end
 end
